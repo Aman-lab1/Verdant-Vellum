@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verdant &amp; Vellum | Gothic Apothecary Clipart &amp; Haunted Digital Assets</title>
+  <meta name="description" content="Gothic apothecary and dark academia clipart: high-resolution 300 DPI transparent PNG collections for junk journalers, stationers and print-on-demand sellers.">
+  <meta name="theme-color" content="#0a0808">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#collections">Skip to collections</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Verdant &amp; Vellum</a>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#top">Home</a>
+        <a href="#collections">Featured Collections</a>
+        <a href="#licensing">Licensing</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-solid nav-cta" id="shopCatalog" href="https://payhip.com/" target="_blank" rel="noopener noreferrer">Shop Catalog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow" id="heroGlow" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <h1 class="hero-title">Gothic Apothecary Artwork &amp; Haunted Digital Assets</h1>
+        <p class="hero-sub">High-resolution 300 DPI transparent PNG collections crafted for paper artists, journalers, and creative designers.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#collections">Browse Collections</a>
+          <a class="btn btn-ghost" id="heroSecondary" href="#collections">See what's inside</a>
+        </div>
+        <p class="hero-note">Instant digital download. Every file is a clean, transparent PNG.</p>
+      </div>
+    </section>
+
+    <section class="section" id="collections">
+      <div class="wrap">
+        <h2 class="section-title">Featured Collections</h2>
+        <p class="section-lead">Open a pack to see everything inside, then buy it on Payhip.</p>
+        <div class="grid" id="productGrid">
+          <noscript><p>Please enable JavaScript to browse collections, or visit our <a href="https://payhip.com/">Payhip store</a>.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="licensing">
+      <div class="wrap narrow">
+        <h2 class="section-title">Commercial Licensing</h2>
+        <div class="license-card">
+          <p>Every purchase includes a simple license so you know exactly what you can make.</p>
+          <ul class="license-list">
+            <li class="yes"><span class="mark" aria-label="Allowed">&#10003;</span> Unlimited personal projects</li>
+            <li class="yes"><span class="mark" aria-label="Allowed">&#10003;</span> Small business sales up to 500 units (stickers, physical journals, merch)</li>
+            <li class="yes"><span class="mark" aria-label="Allowed">&#10003;</span> Print-on-demand when the art is mixed into a fresh composite design</li>
+            <li class="no"><span class="mark" aria-label="Not allowed">&#10007;</span> No reselling, sharing or giving away the raw PNG files</li>
+            <li class="no"><span class="mark" aria-label="Not allowed">&#10007;</span> No bundling them into competing digital asset packs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap narrow">
+        <h2 class="section-title">About the Studio</h2>
+        <p class="about-text">Every piece in Verdant &amp; Vellum is finished by hand. Backgrounds are removed manually along the alpha channel so edges stay clean on any paper colour, then each image is upscaled to a full 300 DPI. The result is artwork that drops straight into your journal spread, sticker sheet or product mockup without a halo or a jagged edge. You buy it, you download it, you start creating.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-brand">Verdant &amp; Vellum</p>
+        <p class="copy">&copy; <span id="year">2026</span> Verdant &amp; Vellum. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a id="mailLink" href="mailto:support@verdantandvellum.com">support@verdantandvellum.com</a>
+        <a id="igLink" href="https://www.instagram.com/verdant.and.vellum/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a id="pinLink" href="https://pin.it/oS2KEFTDx" target="_blank" rel="noopener noreferrer">Pinterest</a>
+        <button class="link-btn" data-doc="privacy">Privacy Policy</button>
+        <button class="link-btn" data-doc="terms">Terms of Service</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product detail dialog (filled in by script.js) -->
+  <dialog id="productDialog" aria-labelledby="pdTitle">
+    <button class="dlg-close" data-close aria-label="Close">&times;</button>
+    <div class="pd">
+      <div class="pd-art" id="pdArt"></div>
+      <div class="pd-info">
+        <h2 id="pdTitle"></h2>
+        <p class="pd-meta" id="pdMeta"></p>
+        <p class="pd-price" id="pdPrice"></p>
+        <div class="pd-actions">
+          <a class="btn btn-solid pd-buy" href="#" target="_blank" rel="noopener noreferrer">Buy now on Payhip</a>
+        </div>
+        <div class="pd-desc" id="pdDesc"></div>
+        <div id="pdFolders" class="pd-folders"></div>
+        <h3>The nerdy tech specs</h3>
+        <ul class="pd-list" id="pdSpecs"></ul>
+        <p class="pd-license">Includes the commercial license described in the Licensing section: personal use, small business sales up to 500 units, and print-on-demand in composite designs.</p>
+        <div class="pd-actions">
+          <a class="btn btn-solid pd-buy" href="#" target="_blank" rel="noopener noreferrer">Buy now on Payhip</a>
+          <button class="btn btn-ghost" data-close>Back to collections</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Policy dialog -->
+  <dialog id="docDialog" aria-labelledby="docTitle">
+    <button class="dlg-close" data-close aria-label="Close">&times;</button>
+    <div class="doc">
+      <h2 id="docTitle"></h2>
+      <div id="docBody"></div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
