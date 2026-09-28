@@ -1,29 +1,54 @@
-﻿# Verdant & Vellum
+﻿<h1 align="center">Verdant &amp; Vellum</h1>
 
-Gothic apothecary and dark academia digital assets: high-resolution, 300 DPI transparent PNG clipart for junk journalers, stationers, paper crafters and print-on-demand sellers.
+<p align="center">
+  <em>Gothic apothecary and dark academia digital assets.</em><br>
+  High-resolution, 300 DPI transparent PNG clipart for junk journalers, stationers, paper crafters and print-on-demand sellers.
+</p>
 
-**Live site:** https://aman-lab1.github.io/Verdant-Vellum/
+<p align="center">
+  <a href="https://aman-lab1.github.io/Verdant-Vellum/"><strong>Visit the live site</strong></a>
+  &nbsp;|&nbsp;
+  <a href="https://www.instagram.com/verdant.and.vellum/">Instagram</a>
+  &nbsp;|&nbsp;
+  <a href="https://pin.it/oS2KEFTDx">Pinterest</a>
+</p>
+
+---
 
 ## About
 
-This repository is the storefront showcase for the Verdant & Vellum brand. It is a static, frontend-only website. Each product page shows the title, description, contents and price, and its "Buy now" button links to the external Payhip checkout, where payment and file delivery are handled.
+This repository is the storefront showcase for the **Verdant & Vellum** brand: a static, frontend-only website with a gothic horror look. Every product has its own pop-up with a gallery, description, contents and price, and its **Buy now** button links to the external Payhip checkout, where payment and file delivery are handled.
 
-Current release: **Cabinet of Curiosities, Vol. 01**, with 16 transparent PNGs at 3000 x 3000 px or larger.
+## Products
 
-- Instagram: [@verdant.and.vellum](https://www.instagram.com/verdant.and.vellum/)
-- Pinterest: [Verdant & Vellum](https://pin.it/oS2KEFTDx)
+| Release | Description | Price | Link |
+|---|---|---|---|
+| **The Midnight Desk Freebie** (Vol. 00) | Free starter pack of transparent PNGs | Free | [Get it on Payhip](https://payhip.com/b/7ORyg) |
+| **Cabinet of Curiosities** (Vol. 01) | 16 transparent PNGs: alchemical relics, gothic apothecary glassware and poisonous botanicals, 3000 x 3000 px+ at 300 DPI | $3 (launch price, regular $6) | [Buy on Payhip](https://payhip.com/b/lI7yZ) |
+
+**License at a glance:** unlimited personal projects, small business sales up to 500 units, and print-on-demand when the art is mixed into a new composite design. No reselling, sharing or bundling the raw PNG files. Full details are in the Licensing section of the site.
+
+## Features
+
+- Gothic horror design: film grain, a flickering headline, and candle-light that follows your cursor
+- Product pop-ups with an image gallery, contents list and specs
+- Shareable link for every product, for example `/#item-cabinet-of-curiosities-vol-01`
+- Responsive layout for phones, tablets and desktops, plus a mobile menu
+- Accessible basics: keyboard navigation, focus styles, alt text, and reduced-motion support
+- Built-in Privacy Policy and Terms of Service pop-ups
+- No frameworks, no build step, no dependencies
 
 ## Tech
 
-Pure HTML5, CSS3 and vanilla JavaScript. No frameworks, no build step, no dependencies. Fonts (Special Elite and IM Fell English) load from Google Fonts.
+Pure HTML5, CSS3 and vanilla JavaScript (ES6). Fonts (Special Elite and IM Fell English) load from Google Fonts.
 
 ## Project structure
 
 ```
 index.html    page structure
 style.css     gothic theme and responsive layout
-script.js     product data, product pop-ups, mobile menu
-images/       website preview images
+script.js     store settings, product data, pop-ups, mobile menu
+images/       website preview images (WebP)
 ```
 
 ## Run locally
@@ -36,14 +61,21 @@ python -m http.server 8000
 
 Then visit http://localhost:8000.
 
+## Customise
+
+Everything editable lives at the top of `script.js`:
+
+- **`CONFIG`**: store link, contact email and social links
+- **`PRODUCTS`**: one block per product (title, price, description, contents, images, Payhip link). A product appears on the site once its `url` is filled in.
+
 ## Deploy
 
-Hosted free on GitHub Pages: Settings, Pages, deploy from the `main` branch, root folder.
+Hosted free on GitHub Pages: Settings, Pages, deploy from the `main` branch, `/ (root)`.
 
 ## License
 
-The website code and all artwork are the property of Verdant & Vellum. All rights reserved. The artwork is licensed to customers only through purchase; see the Licensing section on the site. Please do not copy, redistribute or resell any images from this repository.
+The website code and all artwork are the property of Verdant & Vellum. All rights reserved. The artwork is licensed to customers only through purchase or the free download, under the license shown on the site. Please do not copy, redistribute or resell any images from this repository.
 
 ## Contact
 
-support@verdantandvellum.com
+[vanitasandvine@gmail.com](mailto:vanitasandvine@gmail.com)

@@ -9,7 +9,7 @@
 
 const CONFIG = {
   storeUrl: "https://payhip.com/",                       // your Payhip store link ("Shop Catalog" button)
-  email: "support@verdantandvellum.com",                 // replace with an inbox you own
+  email: "vanitasandvine@gmail.com",
   instagramUrl: "https://www.instagram.com/verdant.and.vellum/?hl=en",
   instagramHandle: "@verdant.and.vellum",
   pinterestUrl: "https://pin.it/oS2KEFTDx",
@@ -71,29 +71,40 @@ const PRODUCTS = [
       "Instant download: a tidy zip file straight to your device the second you check out"
     ],
     images: [
-      { src: "images/vol01-cover.webp",    alt: "Short description of the image" },
-      { src: "images/vol01-mockups.webp",  alt: "..." },
-      { src: "images/vol01-contents.webp", alt: "..." },
-      { src: "images/vol01-license.webp",  alt: "..." },
+      { src: "images/vol01-cover.webp",    alt: "Cabinet of Curiosities Vol. 01 cover: 6 high-res transparent PNGs" },
+      { src: "images/vol01-mockups.webp",  alt: "Mockups showing the artwork on a notebook cover and a hoodie" },
+      { src: "images/vol01-contents.webp", alt: "Diagram of the three folders inside the pack" },
+      { src: "images/vol01-license.webp",  alt: "License and terms summary" }
     ],
     url: "https://payhip.com/b/lI7yZ"
   },
 
-  /* Free sampler: leave url "" until it exists on Payhip, then paste the link. */
+  /* Free product: the Vol. 00 freebie */
   {
-    id: "free-sampler",
-    kind: "sampler",
-    tag: "Free sampler",
-    title: "Free Sampler",
+    id: "midnight-desk-freebie",
+    kind: "freebie",
+    tag: "Vol. 00 - Free",
+    title: "The Midnight Desk Freebie",
     meta: "Transparent PNGs, 300 DPI",
     price: "Free",
     was: "",
-    short: "A few free pieces so you can test the edge quality on your own layouts.",
-    intro: ["A small taste of the studio. Download it free and test the edges on your own journals, stickers and layouts."],
+    short: "A free taste of the studio. Download it, test the clean edges on your own layouts, and see if the Cabinet of Curiosities is for you.",
+    intro: [
+      "The Midnight Desk Freebie is our free starter pack: clean, high-resolution transparent PNGs in the same dark, moody style as the paid collections, with zero background halo.",
+      "Drop them into a junk journal spread, a digital planner or a sticker sheet and see the edge quality for yourself. No card needed."
+    ],
     folders: [],
-    specs: ["Transparent PNG files at 300 DPI", "Personal use license", "Instant download from Payhip"],
-    images: [],
-    url: ""
+    specs: [
+      "Transparent PNG files with clean edges and zero halo",
+      "300 DPI, ready to print or shrink to tiny planner stickers",
+      "Instant download from Payhip"
+    ],
+    images: [
+      { src: "images/freebie-cover.webp",    alt: "The Midnight Desk Freebie Vol. 00 cover with a full moon, a bat and a graveyard" },
+      { src: "images/freebie-mockups.webp",  alt: "Mockups showing the artwork on a notebook cover and a hoodie" },
+      { src: "images/freebie-license.webp",  alt: "License and terms summary" }
+    ],
+    url: "https://payhip.com/b/7ORyg"
   }
 ];
 
@@ -298,13 +309,13 @@ $("#mailLink").href = "mailto:" + CONFIG.email;
 $("#mailLink").textContent = CONFIG.email;
 $("#year").textContent = new Date().getFullYear();
 
-/* Hero second button: free sampler if it is live, otherwise a peek at the first product */
-const sampler = LIVE.find(p => p.kind === "sampler");
-const heroTarget = sampler || LIVE[0];
+/* Hero second button: the free pack if it is live, otherwise a peek at the first product */
+const freebie = LIVE.find(p => p.kind === "freebie");
+const heroTarget = freebie || LIVE[0];
 const hb = $("#heroSecondary");
 if (heroTarget) {
   hb.href = "#item-" + heroTarget.id;
-  hb.textContent = sampler ? "Claim Free Sampler" : "See what's inside";
+  hb.textContent = freebie ? "Claim Free Pack" : "See what's inside";
 } else {
   hb.hidden = true;
 }
