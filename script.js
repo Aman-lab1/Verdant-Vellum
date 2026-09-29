@@ -24,8 +24,8 @@ const PRODUCTS = [
     tag: "Vol. 01",
     title: "Cabinet of Curiosities",
     meta: "16 transparent PNGs, 3000 x 3000 px+, 300 DPI",
-    price: "$3.00",
-    was: "$6.00",                       // set to "" when the sale ends
+    price: "$2.00",
+    was: "$5.00",                       // set to "" when the sale ends
     short:
       "Amber glass, poisonous roots and alchemical relics: clean transparent PNGs for junk journals, dark academia layouts and print-on-demand.",
     intro: [
